@@ -68,12 +68,12 @@ function handleResultValidation() {
         if (!a || !b || !c) {
             continue;
         }
-        if (a === b === c) {
+        if (a ===  b && b === c) {
             roundWon = true;
             break
         }
     }
-if (roundWon) {
+    if (roundWon) {
         statusDisplay.innerHTML = winningMessage();
         gameActive = false;
         return;
